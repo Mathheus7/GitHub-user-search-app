@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Search for GitHub users with the devfinder app. View user profiles, 
+      including avatar, bio, stats, and more. Join the community and explore developers' 
+      repositories and contributions."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/icon-search-githubb.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>GitHub-user-search.App</title>
+  </head>
+  <body>
+
+    <!---======================= SECTION HEADER =========================-->
+
+    <header>
+        <a href=""><img src="./images/icon.svg" alt=""></a>
+      <h1 class="logo">GitHub Search Profiles</h1>
+    </header>
+
+    <!---======================= SECTION SEARCH =========================-->
+
+    <main class="main">
+      <form novalidate class="form" action="#">
+        <img
+          class="form_search-icon"
+          src="./images/search.svg"
+          alt=""
+        />
+        <input
+          class="form_input"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search GitHub username..."
+          aria-label="Search GitHub username"
+          aria-describedby="error-msg"
+        />
+        <span id="error-msg" class="form_error-msg" aria-live="assertive"
+          >No results</span
+        >
+
+        <button
+          class="form_btn"
+          type="submit"
+          aria-label="Search for GitHub username"
+        >
+          Search
+        </button>
+      </form>
+
+    <!---======================= SECTION PROFILE =========================-->
+
+      <section class="container">
+        <div class="user">
+          <div class="user_avatar-wrap">
+            <img class="user_avatar" src="" alt="User Avatar" />
+          </div>
+
+          <div class="user_name-wrap">
+            <div class="user_namename-wrap">
+              <h1 class="user_name"></h1>
+              <a class="user_username" href="" target="_blank"></a>
+            </div>
+
+            <p class="user_date-joined"></p>
+          </div>
+
+          <div class="user_bio-wrap">
+            <p class="user_bio"></p>
+          </div>
+
+          <ul class="user_stats-wrap">
+            <li class="user_stats">
+              <p class="user_stats-heading">Repos</p>
+              <p class="user_stats-repo user-stat"></p>
+            </li>
+            <li class="user_stats">
+              <p class="user_stats-heading">Followers</p>
+              <p class="user_stats-followers user-stat"></p>
+            </li>
+            <li class="user_stats">
+              <p class="user_stats-heading">Following</p>
+              <p class="user_stats-following user-stat"></p>
+            </li>
+          </ul>
+
+          <div class="user_info">
+            <div class="user_info-wrap location">
+              <img src="./images/location.svg" alt="">
+              <p class="user__location user__info-text"></p>
+            </div>
+
+            <div class="user_info-wrap">
+              <img src="./images/unlink.svg" alt="">
+              <a
+                class="user_info-website user_info-text"
+                href=""
+                target="_blank"
+              ></a>
+            </div>
+
+            <div class="user_info-wrap x">
+              <img src="./images/X.svg" alt="">
+              <a class="user_info-twitter user_info-text" href=""></a>
+            </div>
+
+            <div class="user_info-wrap">
+              <img src="./images/suitcase.svg" alt="">
+              <a
+                href=""
+                target="_blank"
+                class="user_info-company user_info-text"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---======================= JS =========================-->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
