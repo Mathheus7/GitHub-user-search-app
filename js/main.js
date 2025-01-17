@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  getUser("Mathheus7");
+  getUser("GitHub");
 })
 
 const renderUser = function (data) {
